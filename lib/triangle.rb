@@ -24,7 +24,11 @@ class Triangle
       end
     end
   end
-    
+    class TriangleError < StandardError
+      def message
+        "illegal"
+      end
+  end
 end
   
 
