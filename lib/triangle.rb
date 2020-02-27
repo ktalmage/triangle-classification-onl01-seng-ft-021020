@@ -9,7 +9,7 @@ class Triangle
     end
     
     def kind
-      total = side_one + side_two + side_three
+      
       if side_one == side_two && side_one == side_three
         return "equilateral".to_sym
       elsif side_two == side_three || side_one == side_three || side_one == side_two
