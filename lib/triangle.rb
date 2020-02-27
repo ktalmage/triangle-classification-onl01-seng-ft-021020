@@ -16,8 +16,9 @@ class Triangle
         return "isosceles".to_sym
       elsif side_one != side_two && side_one != side_three
         return "scalene".to_sym
-      else total == nil || total < 0
         binding.pry
+      else total == nil || total < 0
+        
        begin 
         raise Triangle::TriangleError
       rescue Triangle::TriangleError => error
