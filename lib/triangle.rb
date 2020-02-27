@@ -21,6 +21,7 @@ class Triangle
         raise Triangle::TriangleError
       rescue Triangle::TriangleError => error
       puts error.message
+      binding.pry
       end
     end
   end
