@@ -18,11 +18,12 @@ class Triangle
         return "isosceles".to_sym
       elsif side_one != side_two && side_one != side_three
         return "scalene".to_sym
-        
-      
-      end
+        end
     end
+
   end
+
+end
     class TriangleError < StandardError
       
     
