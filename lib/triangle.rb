@@ -27,10 +27,4 @@ class Triangle
 end
   
 
- 
-     class TriangleError < StandardError
-      def method
-      "illegal"
-    end
-  end
     
