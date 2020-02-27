@@ -16,18 +16,17 @@ class Triangle
         return "isosceles".to_sym
       elsif side_one != side_two && side_one != side_three
         return "scalene".to_sym
-      else side_one == nil && side_two == nil && side_three == nil
+      else total == nil || total < 0
        begin 
-        raise TriangleError
-      rescue TriangleError => error
+        raise Triangle::TriangleError
+      rescue Triangle::TriangleError => error
       puts error.message
       end
     end
   end
     class TriangleError < StandardError
-      def message
-        "illegal"
-      end
+      
+    
   end
 end
   
